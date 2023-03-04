@@ -12,7 +12,7 @@ public class Conversor extends javax.swing.JFrame {
 
     public Conversor() {
         initComponents();
-        this.setTitle("Conversor de Divisas");
+        this.setTitle("Conversor");
         this.setLocationRelativeTo(null);
         panelDivisas divisas = new panelDivisas();
         mostrarPanel(divisas);
@@ -37,6 +37,7 @@ public class Conversor extends javax.swing.JFrame {
         comboElegir = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Conversor");
         setMinimumSize(new java.awt.Dimension(600, 400));
         setPreferredSize(new java.awt.Dimension(600, 400));
         setResizable(false);
@@ -63,7 +64,7 @@ public class Conversor extends javax.swing.JFrame {
             }
         });
 
-        comboElegir.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elegir otra opcion", "Conversor de temperatura", "Conversor de divisas" }));
+        comboElegir.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elegir otra opción", "Conversor de temperatura", "Conversor de divisas" }));
         comboElegir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboElegirActionPerformed(evt);

@@ -190,6 +190,66 @@ public class panelDivisas extends javax.swing.JPanel {
                     default ->
                         cantidad;
                 };
+            case "Euros" ->
+                conversion = switch (a) {
+                    case "Peso Dominicano" ->
+                        cantidad * 58.84;
+                    case "Dólar Estadounidense" ->
+                        cantidad * 1.06;
+                    case "Libras Esterlinas" ->
+                        cantidad * 0.88;
+                    case "Yen Japonés" ->
+                        cantidad * 144.65;
+                    case "Won Sur-Coreano" ->
+                        cantidad * 1377.44;
+                    default ->
+                        cantidad;
+                };
+            case "Libras Esterlinas" ->
+                conversion = switch (a) {
+                    case "Peso Dominicano" ->
+                        cantidad * 66.49;
+                    case "Dólar Estadounidense" ->
+                        cantidad * 1.20;
+                    case "Euros" ->
+                        cantidad * 1.13;
+                    case "Yen Japonés" ->
+                        cantidad * 163.49;
+                    case "Won Sur-Coreano" ->
+                        cantidad * 1559.47;
+                    default ->
+                        cantidad;
+                };
+            case "Yen Japonés" ->
+                conversion = switch (a) {
+                    case "Peso Dominicano" ->
+                        cantidad * 0.41;
+                    case "Dólar Estadounidense" ->
+                        cantidad * 0.0074;
+                    case "Euros" ->
+                        cantidad * 0.0069;
+                    case "Libras Esterlinas" ->
+                        cantidad * 0.0061;
+                    case "Won Sur-Coreano" ->
+                        cantidad * 9.54;
+                    default ->
+                        cantidad;
+                };
+            case "Won Sur-Coreano" ->
+                conversion = switch (a) {
+                    case "Peso Dominicano" ->
+                        cantidad * 0.043;
+                    case "Dólar Estadounidense" ->
+                        cantidad * 0.00077;
+                    case "Euros" ->
+                        cantidad * 0.00072;
+                    case "Libras Esterlinas" ->
+                        cantidad * 0.00064;
+                    case "Yen Japonés" ->
+                        cantidad * 0.11;
+                    default ->
+                        cantidad;
+                };
         }
     }
 
